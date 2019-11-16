@@ -1,0 +1,41 @@
+.cover {
+    height: 400px;
+    background-image:url('/static/img/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.about {
+    height: 600px;
+    background-image: url('/static/img/about.jpg');
+    background-color: rgba(0,0,0,0.7); 
+    background-blend-mode: darken;
+    color: white;
+}
+.zoom {
+    font-family: "impact";
+    text-shadow: 
+    1px 0px 1px #c9a504, 0px 1px 1px #e6bc02, 
+    2px 1px 1px #c9a504, 1px 2px 1px #e6bc02,
+    3px 2px 1px #c9a504, 2px 3px 1px #e6bc02,
+    4px 3px 1px #c9a504, 3px 4px 1px #e6bc02,
+    5px 4px 1px #c9a504, 4px 5px 1px #e6bc02,
+    6px 5px 1px #c9a504, 5px 6px 1px #e6bc02,
+    7px 6px 1px #c9a504;
+}
+.shadows {
+    color: #eee;
+    text-shadow:   1px 0px #eee, 0px 1px #ccc,
+               2px 1px #eee, 1px 2px #ccc,
+               3px 2px #eee, 2px 3px #ccc,
+               4px 3px #eee, 3px 4px #ccc,
+               5px 4px #eee, 4px 5px #ccc,
+               6px 5px #eee, 5px 6px #ccc,
+               7px 6px #eee, 6px 7px #ccc,
+               8px 7px #eee, 7px 8px #ccc,
+               8px 8px #eee;
+}
+.card{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}

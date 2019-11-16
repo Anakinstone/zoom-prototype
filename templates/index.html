@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zoom</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="zoom navbar-brand" href="#">ZOOM</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                          </li> 
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+        <div class="cover d-flex justify-content-center align-items-center flex-column">
+            <h1>Compara precios</h1>
+            <p>de productos GAMER y videojuegos</p>
+            <a class="btn btn-primary" href="{% url 'categorias' %}" role="button">Empezar</a>
+        </div> 
+    </header>
+    <section>
+      <div class="container mt-5">
+
+        <h2 class="d-flex justify-content-center">¿DE DONDE VIENE ZOOM?</h2>
+        <div class="row">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'img/about.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Origen</h5>
+            <p class="card-text">Zoom surge al momento de que un gamer promedio se da cuenta que todas las plataformas de compra en articulos ya sean digitales o fisicos estan extremadamete caros y necesita saber cual es el mejor sitio para invertir su dinero. Un gamer promedio no tiene un ingreso constante ya que van desde los 12 años hasta los 25 y en ese rango son jovenes que aun no trabajan o sus ganancias no les dan para ese tipo de cosas.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'img/mision.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Misión</h5>
+              <p class="card-text">Mejorar la experiencia de compra y venta de articulos sobre gaming en linea.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+              <img src="{% static 'img/vision.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Visión</h5>
+                <p class="card-text">Posicionarnos como la marca mas grande entre gamers para la comparación de precios</p>
+              </div>
+            </div>
+        </div>
+      </div>
+  </section>
+</body>
+</html>
