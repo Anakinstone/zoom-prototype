@@ -5,11 +5,9 @@
     background-position: center;
     color: white;
 }
-.about {
+.cardsbg {
     height: 600px;
-    background-image: url('/static/img/about.jpg');
-    background-color: rgba(0,0,0,0.7); 
-    background-blend-mode: darken;
+    background-color: #1B2B34; 
     color: white;
 }
 .zoom {
@@ -38,4 +36,8 @@
 .card{
     border: 0 !important;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+.bg1{
+    background-color: #1B2B34 !important;
+    color: white;
 }
