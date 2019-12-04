@@ -6,5 +6,6 @@ urlpatterns = [
     path('', include('comparador.urls')),
     path('admin/', admin.site.urls),
     path('', include('comparador.urls')),
+    path('',include('comparador.urls')),
 ]
 urlpatterns += staticfiles_urlpatterns()
